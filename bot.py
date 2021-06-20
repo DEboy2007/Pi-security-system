@@ -31,7 +31,7 @@ async def info(ctx):
 
 @client.command()
 async def update(ctx):
-    await ctx.send("Current view outside the house (Looks great huh)", file=discord.File("current_image.jpg"))
+    await ctx.send("Current view outside the house (Looks great huh)", file=discord.File("current_image.jpg"))  # Just a test image for now
 
 
 @client.command()
