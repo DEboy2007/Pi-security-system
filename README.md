@@ -4,7 +4,8 @@ An easy-to-use and cheap home security system.
 
 ### Features
 - Remote control through discord
-- Face recognition
+- Face recognition (work-in-progress)
+- On demand image of what the camera sees
 - Motion detection
 - Alert and asleep modes so you only get notifications when needed
 
@@ -23,6 +24,6 @@ An easy-to-use and cheap home security system.
 ### Setup
 - Create a discord bot (You can follow this guide: https://www.freecodecamp.org/news/create-a-discord-bot-with-python/)
 - Download the python files and in bot.py, replace the token and channel ID with your bot's token and the channel where you would like security alerts
-- Transfer bot.py and motion_detection.py to your Pi and run bot.py
+- Transfer bot.py and motion_detection.py to your Pi and run bot.py (Make sure all files are in the same directory)
 - Connect your Pi camera to the Pi and put the camera where you want to monitor
 - Congratulations! You now have a remotely accessible home security system!
