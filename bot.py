@@ -3,7 +3,7 @@ from discord.ext import commands, tasks
 import motion_detection
 from datetime import datetime
 
-TOKEN = "INSERT TOKEN HERE"
+TOKEN = "ODU2MDEyMzY4MDMzODczOTQx.YM61pA.xildexP8zYlnU3xcGlXr3k5yTRI"
 
 help_message = """```
 arm - Turn on security notifications
@@ -31,7 +31,8 @@ async def info(ctx):
 
 @client.command()
 async def update(ctx):
-    await ctx.send("Current view outside the house (Looks great huh)", file=discord.File("current_image.jpg"))  # Just a test image for now
+    motion_detection.update()
+    await ctx.send("Current view outside the house (Looks great huh)", file=discord.File("current_image.jpg"))
 
 
 @client.command()
@@ -54,7 +55,7 @@ async def status(ctx):
 
 @tasks.loop(seconds=3)
 async def detect_motion():
-    channel = client.get_channel(0000) # Replace with channel ID where you want alerts to show up
+    channel = client.get_channel(856220951472635964)
     if motion_detection.Main() and armed == "armed":
         await channel.send("POSSIBLE INTRUDER ALERT")
 
