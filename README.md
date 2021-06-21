@@ -22,7 +22,7 @@ An easy-to-use and cheap home security system.<br>
 #### Software
 - Discord
 - Raspbian installed on your Pi
-- discord.py library installed on your Pi
+- discord.py and opencv library installed on your Pi
 
 ### Setup
 - Create a discord bot (You can follow this guide: https://www.freecodecamp.org/news/create-a-discord-bot-with-python/)
