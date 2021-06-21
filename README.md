@@ -31,4 +31,4 @@ An easy-to-use and cheap home security system.<br>
 - Download the python files and in bot.py, replace the token and channel ID with your bot's token and the channel where you would like security alerts
 - Transfer bot.py and motion_detection.py to your Pi and run bot.py (Make sure all files are in the same directory)
 - Connect your Pi camera to the Pi and put the camera where you want to monitor
-- Congratulations! You now have a remotely accessible home security system!
+- Congratulations! You now have a remotely accessible home security system! (use $info for help)
