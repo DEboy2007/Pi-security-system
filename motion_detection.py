@@ -38,6 +38,14 @@ def getImage():
             camera.capture(stream, format="rgb")
             return stream.array
 
+def update():
+    with picamera.PiCamera() as camera:
+        camera.start_preview()
+        time.sleep(3)
+        camera.capture("current_image.jpg")
+        camera.stop_preview()
+
+
 def Main():
     stream1 = getImage()
     stream2 = getImage()
