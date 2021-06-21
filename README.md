@@ -26,7 +26,8 @@ An easy-to-use and cheap home security system.<br>
 
 ### Setup
 - Create a discord bot (You can follow this guide: https://www.freecodecamp.org/news/create-a-discord-bot-with-python/)
-- Type **"pip3 install discord.py opencv-python"** into your terminal to install discord.py and opencv
+- Install discord.py and opencv:
+```pip install discord.py opencv-python```
 - Download the python files and in bot.py, replace the token and channel ID with your bot's token and the channel where you would like security alerts
 - Transfer bot.py and motion_detection.py to your Pi and run bot.py (Make sure all files are in the same directory)
 - Connect your Pi camera to the Pi and put the camera where you want to monitor
