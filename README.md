@@ -5,12 +5,12 @@ An easy-to-use and cheap home security system.<br>
 ### Features
 - Remote control through discord
 - Face recognition (work-in-progress)
-- On demand image of what the camera sees (work-in-progress)
+- On demand image of what the camera sees
 - Motion detection
 - Alert and asleep modes so you only get notifications when needed
 
 ### Image of current features
-![image](https://user-images.githubusercontent.com/66331423/122688333-7e760a80-d1d0-11eb-9ad7-29a937369fbf.png)
+![image](https://user-images.githubusercontent.com/66331423/122826428-fc511900-d297-11eb-9d6c-356fc78f98a8.png)
 
 ### Requirements
 
