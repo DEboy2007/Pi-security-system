@@ -1,9 +1,10 @@
 import discord
 from discord.ext import commands, tasks
 import motion_detection
+import face_recognition
 from datetime import datetime
 
-TOKEN = "INSERT TOKEN HERE"
+TOKEN = "ODU2MDEyMzY4MDMzODczOTQx.YM61pA.gSYsAqfjv5FVKrEOAUv8DWEuGY4"
 
 help_message = """```
 arm - Turn on security notifications
@@ -55,9 +56,10 @@ async def status(ctx):
 
 @tasks.loop(seconds=3)
 async def detect_motion():
-    channel = client.get_channel(000000)  # Replace with channel ID of where you want alerts
+    channel = client.get_channel(856220951472635964)
     if motion_detection.Main() and armed == "armed":
-        await channel.send("POSSIBLE INTRUDER ALERT")
+        intruder = face_recognition.temp_face_recognition() # TEMPORARY TESTING INTRUDER CODE
+        await channel.send("POSSIBLE INTRUDER ALERT\nFace recognition: " + intruder)
 
 
 client.run(TOKEN)
