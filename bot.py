@@ -4,7 +4,7 @@ import motion_detection
 import face_recognition
 from datetime import datetime
 
-TOKEN = "ODU2MDEyMzY4MDMzODczOTQx.YM61pA.gSYsAqfjv5FVKrEOAUv8DWEuGY4"
+TOKEN = "INSERT TOKEN HERE"
 
 help_message = """```
 arm - Turn on security notifications
@@ -56,7 +56,7 @@ async def status(ctx):
 
 @tasks.loop(seconds=3)
 async def detect_motion():
-    channel = client.get_channel(856220951472635964)
+    channel = client.get_channel(INSERT CHANNEL ID FOR WARNINGS HERE)
     if motion_detection.Main() and armed == "armed":
         intruder = face_recognition.temp_face_recognition() # TEMPORARY TESTING INTRUDER CODE
         await channel.send("POSSIBLE INTRUDER ALERT\nFace recognition: " + intruder)
