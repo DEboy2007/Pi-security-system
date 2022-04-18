@@ -4,7 +4,6 @@ An easy-to-use and cheap home security system.<br>
 
 ### Features
 - Remote control through discord
-- Face recognition (work-in-progress)
 - On demand image of what the camera sees
 - Motion detection
 - Alert and asleep modes so you only get notifications when needed
