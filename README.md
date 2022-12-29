@@ -1,6 +1,6 @@
 # Pi-security-system
 An easy-to-use and cheap home security system.<br>
-**Still a work-in-progress!**
+**Face Recognition still a work-in-progress!**
 
 ### Features
 - Remote control through discord
